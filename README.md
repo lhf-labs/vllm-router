@@ -237,4 +237,4 @@ The continuous integration pipeline includes comprehensive testing, benchmarking
 
 ## Acknowledgement
 
-This router adapted the [SGLang router](https://github.com/sgl-project/sglang/tree/main/sgl-router) API design and implementation for those sharing functionalities.
+This router adapted the [SGLang Model Gateway](https://github.com/sgl-project/sglang/tree/main/sgl-model-gateway) API design and implementation for those sharing functionalities.
