@@ -52,4 +52,5 @@ EXPOSE 8080
 EXPOSE 29000
 
 # Default command to run the router using Rust binary directly
-CMD ["vllm-router", "--host", "0.0.0.0", "--port", "8080"]
+ENTRYPOINT ["vllm-router"]
+CMD []
