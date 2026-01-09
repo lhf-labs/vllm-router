@@ -1,5 +1,28 @@
 # LHF Labs Fork of the vLLM Router project for adapting the project for our deployments
 
+## Building the images
+
+To build the images that we use for our proyects one can use the following commands:
+
+**Build the default Rust cli image (compatible with the production-stack of vllm)**:
+
+```bash
+DOCKER_BUILDKIT=1 docker build . \
+  --platform=linux/amd64 \
+  --tag lhflabs/vllm-router:latest \
+  --file Dockerfile.router
+```
+
+**Build the Python cli image (compatible with the production-stack of vllm), which has more args than the Rust one**:
+
+```bash
+DOCKER_BUILDKIT=1 docker build . \
+  --platform=linux/amd64 \
+  --tag lhflabs/vllm-router-python:latest \
+  --file Dockerfile.python-cli
+```
+
+
 # vLLM Router
 
 A high-performance and light-weight request forwarding system for vLLM large scale deployments, providing advanced load balancing methods and prefill/decode disaggregation support.
